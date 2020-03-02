@@ -22,3 +22,6 @@ $ git add .
 git commit -m "init"
 git push --set-upstream origin master
 --> git-------------------------------------------------------------------
+
+yarn start, 종료할 때는 ctrl + c
+
