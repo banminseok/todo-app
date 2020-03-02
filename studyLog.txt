@@ -1,0 +1,24 @@
+yarn create react-app todo-app
+
+cd todo-app
+yarn add node-sass classnames react-icons
+
+--git-->-----------------------------------------------------------------
+git status
+
+$ git remote add origin https://github.com/banminseok/todo-app.git
+fatal: not a git repository (or any of the parent directories): .git
+
+$ git init
+Initialized empty Git repository in E:/ban/react/todo-app/.git/
+
+$ git remote add origin https://github.com/banminseok/todo-app.git
+
+$  git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/banminseok/todo-app.git'
+
+$ git add .
+git commit -m "init"
+git push --set-upstream origin master
+--> git-------------------------------------------------------------------
