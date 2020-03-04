@@ -27,6 +27,7 @@ Initialized empty Git repository in E:/ban/react/todo-app/.git/
 
 $ git remote add origin https://github.com/banminseok/todo-app.git
 
+git commit  후 
 git pull origin master
 
 $  git push --set-upstream origin master
