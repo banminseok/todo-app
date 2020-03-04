@@ -27,6 +27,8 @@ Initialized empty Git repository in E:/ban/react/todo-app/.git/
 
 $ git remote add origin https://github.com/banminseok/todo-app.git
 
+git pull origin master
+
 $  git push --set-upstream origin master
 error: src refspec master does not match any
 error: failed to push some refs to 'https://github.com/banminseok/todo-app.git'
