@@ -1,3 +1,16 @@
+--install --
+nodejs.org 
+yarnpkg.com
+vscode
+  - EsLint :자바스크립트 문법 및 코드 스타일 검사
+  - Reactjs Code Snippets(제작사:charalampos karypidis)
+  - Prettier-Code formatter
+  - Korean Language Pack for Visual Studio Code
+    [F1] -> Configure Display Language-> ko
+git-scm.com
+
+
+
 yarn create react-app todo-app
 
 cd todo-app
