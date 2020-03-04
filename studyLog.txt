@@ -41,3 +41,5 @@ git push --set-upstream origin master
 
 yarn start, 종료할 때는 ctrl + c
 
+git log --oneline --graph --branches
+
