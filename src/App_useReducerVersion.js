@@ -29,7 +29,7 @@ function todoReducer (todos, action){
   }//
 }
 const App = () => {
-  const [todos, setTodos] = useState(createBulkTodos);
+  const [todos, dispatch] = useReducer(todoReducer, undefined, createBulkTodos);
 
   const nextId = useRef(2501);
 
@@ -40,29 +40,21 @@ const App = () => {
         text,
         checked: false,
       };
-      setTodos(todos => todos.concat(todo));
+      dispatch({type: 'INSERT',todo});
       nextId.current += 1;
     },
-    []
+    [],
   );
 
   const onRemove = useCallback(
     id=>{
-      setTodos(todos => todos.filter(todo=>todo.id !== id));
+      dispatch({type: 'REMOVE',id});
     },[]
   );
 
   const onToggle = useCallback(
-    /*id =>{
-      setTodos(todos=>todos.map(todo=>todo.id===id ?{...todo, checked:!todo.checked} :todo));
-    },[]*/
     id =>{
-      setTodos(
-        todos=>todos.map(
-          //todo => todo.id ===id ? {...todo, checked: !todo.checked}:todo,   
-          todo=> todo.id ===id ? {...todo, checked: !todo.checked}:todo,
-        ),
-      );      
+      dispatch({type: 'TOGGLE',id});
     },[]
   );
   return (
